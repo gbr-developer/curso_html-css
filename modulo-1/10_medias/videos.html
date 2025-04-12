@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--
+        Vídeos
+        Melhor opção é hospedar vídeos de forma externa
+        <video> </video>: Adiciona arquivos de vídeos locais na página
+            src="arquivo.extensão": seleciona o arquivo
+            type="video/extensão": define o tipo de arquivo
+            width="tamanho": define o tamanho do vídeo na página
+            poster="imagem.extensão": define uma imagem de poster para o vídeo
+            controls: ativa os controles do vídeo para o usuário
+            autoplay: inicia o vídeo automaticamente quando a página for carregada
+            loop: repete o vídeo quando chegar ao final
+        <iframe> Vídeo externo </iframe>: adiciona um vídeo de um site externo
+            Código copiado do próprio YouTube ou Vimeo pela opção: compartilhar; embed
+    -->
+
+    <h1>Página principal</h1>
+    <a href="imagens_dinamicas.html" target="_self" rel="prev" hreflang="pt-br">Página principal</a>
+    
+    <h1>Áudios</h1>
+    <a href="audio.html" target="_self" rel="prev" hreflang="pt-br">Áudio</a>
+
+    <h1>Vídeos</h1>
+    <h2>Vídeos hospedados no próprio servidor</h2>
+    <video src="media/meu-video.webm" type="video/webm" width="600" poster="imagens/gbr.png" controls autoplay></video><!--Carrega um vídeo do próprio servidor-->
+
+    <video width="600" poster="imagens/gbr.png" controls autoplay><!--Define um conjunto de vídeos para substituir caso os outros não funcionem-->
+        <source src="media/meu-video.webm" type="video/webm"><!--Vídeos extras para substituição-->
+        <source src="media/meu-video.mp4" type="video/mp4">
+        <source src="media/meu-video.ogv" type="video/ogg">
+        <p>Infelizmente seu navegador não conseguiu carregar o vídeo</p>
+    </video>
+
+    <h2>Vídeos hospedados em outros sites</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs?si=vheUziMidNJk13T3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--Iframe importado diretamente do YouTube, em: Compartilhar, Embed -->
+</body>
+</html>
