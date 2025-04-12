@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudios</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--
+        Áudios
+        <audio></audio>: Adiciona um arquivo de áudio
+            src="arquivo.extensão": seleciona o arquivo de áudio
+            type="audio/extensão": define o tipo de arquivo usado
+            preload="metadata / none / auto": Define o que será carregado junto com a página
+                "metadata": Apenas as informações sobre o arquivo
+                "none": Não carrega nada até que o usuário ou um script inicie a reprodução
+                "auto"(padrão): carrega o arquivo de áudio junto com a página
+            controls: apresenta o player na tela
+            autoplay: inicia a reprodução assim que a página for carregada
+            loob: Repete a reprodução quando o áudio for carregado
+
+    -->
+    <h1>Imagens adaptaveis</h1>
+    <a href="imagens_dinamicas.html" target="_self" rel="prev" hreflang="pr-br">Imagens adaptaveis</a>
+
+    <h1>Áudios</h1>
+    <audio src="media/gtasa.mp3" type="audio/mpeg" preload="metadata" controls loop><!--Adiciona o áudio e os controles-->
+        <source src="media/mgo.mp3" type="audio/mpeg"> <!-- Adiciona outros áudios caso o primeiro não seja encontrado -->
+        <p>Seu navegador não suporta áudio <a href="media/gtasa.mp3" download="media/gtasa.mp3"></a></p> <!-- Apresenta uma mensagem de erro 
+        caso nenhum áudio seja suportado e o link para download do áudio -->
+    </audio>
+
+    <h1>Vídeos</h1>
+    <a href="videos.html" target="_self" rel="next" hreflang="pt-br">Vídeos</a>
+</body>
+</html>

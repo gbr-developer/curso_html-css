@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--
+        Imagens adaptáveis
+        <picture> </picture>: Concentra as imagens em uma fonte
+        <source>: Imagens que serão adicionadas (Do menor para o maior)
+            media="max-width: px": Troca a imagem quando a janela chega em um determinado tamanho
+            srcset="imagem": seleciona a imagem que será usada
+            type:"image/extensão": Define o tipo de imagem usado
+        <img>: imagem original
+    -->
+    <h1>Imagens adaptaveis</h1><!-- Alterar o tamanho da janela para ver as mudanças na imagem-->
+    <picture><!-- Concentra as imagens em uma fonte -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- Troca a imagem quando a janela diminuir ao tamanho definido -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto tamanho G"> <!-- Imagem original -->
+    </picture>
+
+    <h1>Áudios</h1>
+    <a href="audio.html" target="_self" rel="next" hreflang="pt-br">Áudios</a>
+
+    <h1>Vídeos</h1>
+    <a href="videos.html" target="_self" rel="next" hreflang="pt-br">Vídeos</a>
+</body>
+</html>
