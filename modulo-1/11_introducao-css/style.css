@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* Regra @charset para configurar idioma e evitar problemas de acentuação*/
+
+
+body {
+    background-color: lightgoldenrodyellow; /*Cor de fundo*/
+    color: chocolate; /*Cor da fonte*/
+    font-size: 12pt; /*Tamanho da fonte*/
+    font-family: Arial, Helvetica, sans-serif; /*Família da fonte*/
+}
+
+h1 {
+    color: brown;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
