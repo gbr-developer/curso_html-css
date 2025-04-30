@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+        /*Pseudo-classe*/
+        div:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classe</h1>
+    <p>Palavra-chave adicionada às declarações de um seletor após um sinal de dois pontos que especificam um estado especial de um elemento.</p>
+    <p>Exemplo de pseudo-classes para estilos: <br>
+        - :visited (Link Visitado)<br>
+        - :active (Quando clicado)<br>
+        - :checked (Input radio checado)<br>
+        - :empty (Elemento sem filho)<br>
+        - :focus (Elemento focado)<br>
+        - :hover (quando passar o mouse por cima)</p>
+    <h2>Exemplo hover</h2>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    
+    <p>
+        <a href="01seletor.html" target="_self"><input type="button" value="Seletores"></a>
+        <a href="03pseudoelemento.html" target="_self"><input type="button" value="Pseudo-elementos"></a>
+        <a href="04hover.html" target="_self"><input type="button" value="Hover"></a>
+    </p>
+    
+</body>
+</html>

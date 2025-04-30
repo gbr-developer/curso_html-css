@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+
+        a{ 
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::after {
+            content: " ☑";
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        a::before {
+            content: "✖ ";
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .especial {
+            background-color: rgb(54, 61, 68);
+            
+        }
+
+        .especial::before{
+            content: "✖ ";
+            text-decoration: none;
+            font-weight: normal;
+            color: red;
+        }
+
+        .especial::after{
+            content: " ☑";
+            text-decoration: none;
+            font-weight: normal;
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    <p>É uma palavra-chave adicionada às declarações de um seletor após dois sinais de dois pontos que permitem que você formate um pedaço específico do elemento referenciado.</p>
+    <p>Principais pseudo-elementos: <br>
+        - ::before: antes <br>
+        - ::after: depois <br>
+        - ::fist-letter: primeira letra <br>
+        - ::first-line: primeira linha <br>
+        - ::active: ativo <br>
+        - ::visited: visitado</p>
+    <h2>Exemplo: Personalizando links</h2>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="blank">Repositório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" class="especial" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="blank">Site do CursoemVídeo</a></li>
+    </ul>
+    <a href="01seletor.html" target="_self"><input type="button" value="Seletores"></a>
+    <a href="02pseudoclasse.html" target="_self"><input type="button" value="Pseudo-classe"></a>
+    <a href="04hover.html" target="_self"><input type="button" value="Hover"></a>
+</p>
+</body>
+</html>
