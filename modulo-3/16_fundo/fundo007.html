@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+</head>
+<style>
+    #container {
+        position: relative;
+        height: 96vh;
+        padding: 10px;
+        background-color: purple;
+        background-image: url("imagens/target001.png");
+        background-size: 100% 100%;
+    }
+
+    #conteudo {
+        position: absolute;
+        height: 200px;
+        width: 400px;
+        background-color: yellow;
+        background-image: url("imagens/target001.png");
+        background-size: 100% 100%;
+        /*Centralizando o conteúdo na DIV*/
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+</style>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    <a href="fundo001.html" target="_self"><input type="button" value="Imagem de Fundo"></a>
+    <a href="fundo002.html" target="_self"><input type="button" value="Personalização"></a>
+    <a href="fundo003.html" target="_self"><input type="button" value="Posicionamento 1"></a>
+    <a href="fundo004.html" target="_self"><input type="button" value="Posicionamento 2"></a>
+    <a href="fundo005.html" target="_self"><input type="button" value="Posicionamento 3"></a>
+    <a href="fundo006.html" target="_self"><input type="button" value="Background-attachment"></a>
+</body>
+</body>
+</html>
