@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <h2>Configurações Básicas</h2>
+    <p>
+        &lt;iframe&gt; <br>
+        src="Link_da_página" <br>
+        frameborder="0 (sem borda), 1(com borda)" <br>
+        width="largura" <br>
+        height="altura" <br>
+        scrolling="yes (permite scroll), no (não permite scroll)" <br>
+        link para substituir o iframe caso não funcione <br>
+        &lt;/iframe&gt;
+    </p>
+    <h2>Acessando o site do Curso em vídeo pelo Iframe</h2>
+    <iframe src="https://www.cursoemvideo.com" frameborder="1" height="500" scrolling="no"><a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a></iframe>
+    <h2>Acessoando o Repositório do Gustavo Guanabara pelo Iframe</h2>
+    <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500"><a href="https://gustavoguanabara.github.io" target="_blank" >GitHub</a></iframe><br>
+    <a href="iframe002.html" target="_self"><input type="button" value="Iframe com páginas locais"></a>
+    <a href="iframe003.html" target="_self"><input type="button" value="Trocando páginas"></a>
+    <a href="iframe004.html" target="_self"><input type="button" value="Formulários"></a>
+    <a href="iframe005.html" target="_self"><input type="button" value="Scripts"></a>
+    <a href="iframe006.html" target="_self"><input type="button" value="Iframes padrões"></a>
+</body>
+</html>

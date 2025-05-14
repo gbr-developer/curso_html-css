@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Output com range</h1>
+    <p>Demonstra o valor do input range</p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inum">Número:</label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <a href="form001.html"><input type="button" value="Formulário Básico"></a>
+    <a href="form002.html"><input type="button" value="Usuário e Senha"></a>
+    <a href="form003.html"><input type="button" value="Controles de Formulário 1"></a>
+    <a href="form004.html"><input type="button" value="Controles de Formulário 2"></a>
+    <a href="form005.html"><input type="button" value="Controles de Formulário 3"></a>
+    <a href="form006.html"><input type="button" value="Controle de Formulário 4"></a>
+    <a href="form007.html"><input type="button" value="Controle sem Input"></a>
+    <a href="form008.html"><input type="button" value="Output"></a>
+    <a href="form0010.html"><input type="button" value="Exercício com JS"></a>
+</body>
+</html>

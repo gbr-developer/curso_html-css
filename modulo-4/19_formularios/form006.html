@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Controles de Formulário 4</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="5">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do Perfil:</label>
+            <input type="file" name="Foto" id="ifoto">
+        </p>
+        <!--Envio de arquivos precisa ser pelo method="post"-->
+        
+        <p> 
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </p>
+        <h2>Controles</h2>
+        <p>
+            type="color": Cores <br>
+            type="range": Barra de quantidade (Define o mínimo e máximo com min="número" e max="número") <br>
+            type="file": Envio de arquivos (Precisa que o method do formulário seja post)
+        </p>
+    </form>
+    <a href="form001.html"><input type="button" value="Formulário Básico"></a>
+    <a href="form002.html"><input type="button" value="Usuário e Senha"></a>
+    <a href="form003.html"><input type="button" value="Controles de Formulário 1"></a>
+    <a href="form004.html"><input type="button" value="Controles de Formulário 2"></a>
+    <a href="form005.html"><input type="button" value="Controles de Formulário 3"></a>
+    <a href="form007.html"><input type="button" value="Controles sem Input"></a>
+    <a href="form008.html"><input type="button" value="Output"></a>
+    <a href="form009.html"><input type="button" value="Output com range"></a>
+    <a href="form0010.html"><input type="button" value="Exercício com JS"></a>
+</body>
+</html>

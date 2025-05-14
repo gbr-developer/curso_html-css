@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        form {
+            border: 1px solid black;
+            padding: 5px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário Básico</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="name" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    <h2>Form</h2>
+    <p>
+        &lt;form&gt; <br>
+        action="arquivo": Arquivo que irá utilizar as informações <br>
+        method="post ou get": Método de envio do formulário <br>
+        autocomplete="on ou off": Permite completar as informações automaticamente com as sugestões do Google <br>
+    </p> 
+    <h2>label</h2>
+    <p>
+        &lt;label&gt;: Liga um texto ao input <br>
+        for="id_do_input"
+    </p>
+    <h2>Input</h2>
+    <p>
+        &lt;input&gt;: Onde serão inseridas as informações <br>
+        type="text": Tipo para texto <br>
+        type="number": TIpo para senhas
+        type="password": Tipo para senhas <br>
+        type="submit": Botão para enviar <br>
+        type="reset": Limpa os campos inseridos
+    </p>
+    <a href="form002.html"><input type="button" value="Usuário e Senha"></a>
+    <a href="form003.html"><input type="button" value="Controles de Formulário 1"></a>
+    <a href="form004.html"><input type="button" value="Controles de Formulário 2"></a>
+    <a href="form005.html"><input type="button" value="Controles de Formulário 3"></a>
+    <a href="form006.html"><input type="button" value="Controles de Formulário 4"></a>
+    <a href="form007.html"><input type="button" value="Controles sem Input"></a>
+    <a href="form008.html"><input type="button" value="Output"></a>
+    <a href="form009.html"><input type="button" value="Output com range"></a>
+    <a href="form0010.html"><input type="button" value="Exercício com JS"></a>
+</body>
+</html>

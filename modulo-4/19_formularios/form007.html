@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Controles sem input</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Proffisão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="Professor"></option>
+            </datalist>
+        </p>
+        
+        <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <h2>Controles</h2>
+    <p>
+        select: Define uma lista com opções por seleção <br>
+        option: Adiciona as opções do select <br>
+        optgroup: Cria um grupo para as opções
+    </p>
+    <p>
+        datalist: Define uma lista com opções digitadas <br>
+        option: Adiciona sugestões na lista <br>
+        Precisa de um input do type text e um atributo list="id_do_datalist" dentro do input
+    </p>
+    <p>
+        textarea: Área onde o usuário pode escrever uma mensagem <br>
+        cols e rows: Definem o tamanho da área de texto com colunas e linhas <br>
+        É necessário um method="post" no formulário
+    </p>
+    <a href="form001.html"><input type="button" value="Formulário Básico"></a>
+    <a href="form002.html"><input type="button" value="Usuário e Senha"></a>
+    <a href="form003.html"><input type="button" value="Controles de Formulário 1"></a>
+    <a href="form004.html"><input type="button" value="Controles de Formulário 2"></a>
+    <a href="form005.html"><input type="button" value="Controles de Formulário 3"></a>
+    <a href="form006.html"><input type="button" value="Controle de Formulário 4"></a>
+    <a href="form008.html"><input type="button" value="Output"></a>
+    <a href="form009.html"><input type="button" value="Output com range"></a>
+    <a href="form0010.html"><input type="button" value="Exercício com JS"></a>
+</body>
+</html>

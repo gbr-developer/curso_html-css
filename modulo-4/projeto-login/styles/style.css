@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/*Mobile First*/
+:root {
+    --cor1: #5F2C82;
+    --cor2: #53AAA7;
+    --cor3: #94CFCD;
+}
+
+* {
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+main {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+}
+
+.img {
+    display: block;
+    background: #fff url("../img/pattern.jpg") no-repeat top center;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+
+.login {
+    display: block;
+    padding: 10px;
+}
+
+.login h1 {
+    text-align: center;
+}
+
+.login p {
+    margin: 15px;
+}
+
+.caixa-input {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: var(--cor1);
+    width: fit-content;
+    margin: 5px 0;
+    border-radius: 7px;
+}
+
+.email-senha {
+    background-color: var(--cor3);
+    height: 35px;
+    border-radius: 7px;
+}
+
+.email-senha:focus {
+    background-color: #fff;
+}
+
+.entrar, .recuperar {
+    position: relative;
+    width: 80%;
+    height: 40px;
+    margin: 5px 0;
+    left: 50%;
+    transform: translatex(-50%);
+    border-radius: 5px;
+}
+
+.entrar {
+    background-color: var(--cor2);
+    color: #fff;
+    border: 0px;
+}
+
+.entrar:hover {
+    background-color: #2D6462;
+}
+
+.recuperar {
+    background-color: #fff;
+    color: #2D6462;
+    border: 1px solid var(--cor2);   
+}
+
+.recuperar:hover {
+    background-color: var(--cor3);
+    color: #000;
+}

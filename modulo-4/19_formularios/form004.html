@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Controles de Formulário 2</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="Nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <!--Estudar mais sobre RegEx-->
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(d{2}\)\d{4,5}-\d{4}$" placeholder="(00)00000-0000">
+            
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <h2>Controles</h2>
+    <p>
+        type="email": Email <br>
+        type="tel": Telefone <br>
+    </p>
+    <a href="form001.html"><input type="button" value="Formulário Básico"></a>
+    <a href="form002.html"><input type="button" value="Usuário e Senha"></a>
+    <a href="form003.html"><input type="button" value="Controles de Formulário 1"></a>
+    <a href="form005.html"><input type="button" value="Controles de Formulário 3"></a>
+    <a href="form006.html"><input type="button" value="Controles de Formulário 4"></a>
+    <a href="form007.html"><input type="button" value="Controles sem Input"></a>
+    <a href="form008.html"><input type="button" value="Output"></a>
+    <a href="form009.html"><input type="button" value="Output com range"></a>
+    <a href="form0010.html"><input type="button" value="Exercício com JS"></a>
+</body>
+</html>

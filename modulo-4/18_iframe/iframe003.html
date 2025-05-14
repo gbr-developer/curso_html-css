@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trocando Páginas no Iframe</h1>
+    <p>Criar um &lt;iframe&gt; com o atributo name="nome_escolhido" e adicionar links com o atributo target="name_do_iframe</p>
+    <h2>Escolha uma página</h2>
+
+<ul>
+    <li><a href="paginas_extras/pagina001.html" target="frame">Primeira página</a></li>
+    <li><a href="paginas_extras/pagina002.html" target="frame">Segunda página</a></li>
+    <li><a href="paginas_extras/pagina003.html" target="frame">Terceira página</a></li>
+</ul>
+    <iframe id="tela" name="frame" srcdoc="<h1> escolha uma das opções acima</h1> <p>o atributo srcdoc permite adicionar textos para exibição antes da página ser selecionada</p>" frameborder="1">Infelizmente seu navegador não é compatível com isso!</iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore quae, saepe, maiores odit voluptas, nulla repellendus facilis consequatur possimus iste? Eveniet consequuntur impedit asperiores molestias, nam officiis fuga quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque cupiditate tempora suscipit quas eius natus, obcaecati nihil nisi, nesciunt quod dolorem neque praesentium quam eos consequuntur? Nostrum, doloremque assumenda.</p>
+    <a href="iframe001.html" target="_self"><input type="button" value="Iframes básico"></a>
+    <a href="iframe002.html" target="_self"><input type="button" value="Iframes com páginas locais"></a>
+    <a href="iframe004.html" target="_self"><input type="button" value="Formulários"></a>
+    <a href="iframe005.html" target="_self"><input type="button" value="Scripts"></a>
+    <a href="iframe006.html" target="_self"><input type="button" value="Iframes padrões"></a>
+</body>
+</html>

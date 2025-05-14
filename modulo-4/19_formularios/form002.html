@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Usuário e Senha</h1>
+    <form autocomplete="on" action="cadastro.php" method="post">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" placeholder="Min 8 letras" autocomplete="current-password">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        <h2>Outros atributos</h2>
+            <p>
+                required: Torna o preenchiemnto obrigatório <br>
+                minlenght="número", maxlenght="número": Define o número mínimo e máximo de caracteres <br>
+                size="número": Tamanho da caixa do input <br>
+                placeholder="texto": Adiciona um texto padrão no fundo do input como uma dica <br>
+                autocomplete="username, current-password": Personalização do autocomplete com o usuário ou a senha
+            </p>
+    </form>
+    <a href="form001.html"><input type="button" value="Formulário Básico"></a>
+    <a href="form003.html"><input type="button" value="Controles de Formulário 1"></a>
+    <a href="form004.html"><input type="button" value="Controles de Formulário 2"></a>
+    <a href="form005.html"><input type="button" value="Controles de Formulário 3"></a>
+    <a href="form006.html"><input type="button" value="Controles de Formulário 4"></a>
+    <a href="form007.html"><input type="button" value="Controles sem Input"></a>
+    <a href="form008.html"><input type="button" value="Output"></a>
+    <a href="form009.html"><input type="button" value="Output com range"></a>
+    <a href="form0010.html"><input type="button" value="Exercício com JS"></a>
+</body>
+</html>

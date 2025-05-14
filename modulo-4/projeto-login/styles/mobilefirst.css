@@ -1,0 +1,45 @@
+/*Configurações gerais*/
+
+/* Tablets*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        background-color: red;
+    }
+
+    main {
+        width: 80vw;
+        
+    }
+
+    .img {
+        background: #fff url("../img/pattern.jpg") no-repeat top center;
+        float: right;
+        height: 250px;
+        width: 200px;
+    }
+
+    .login {
+        
+    }
+}
+
+/*Desktop pequeno*/
+@media screen and (min-width:1025px) and (max-width: 1440px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/*Desktop grande*/
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    body {
+        background-color: orange;
+    }
+}
+
+/*Maiores*/
+@media screen and (min-width: 1921px) {
+    body {
+        background-color: aquamarine;
+    }
+}
