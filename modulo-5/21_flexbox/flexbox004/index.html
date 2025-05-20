@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;
+            height: 200px;
+            display: flex;
+            flex-flow: row nowrap;
+            /*Justify-content alinha com o eixo principal*/
+            justify-content: space-evenly;
+            /*align-items alinha com o eixo transversal*/
+            align-items: center;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhamento nos eixos</h1>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h2>justify-content</h2>
+    <p>Alinha os itens com o eixo principal</p>
+    <p>justify-content: flex-start</p>
+    <p>justify-content: flex-end</p>
+    <p>justify-content: center</p>
+    <p>justify-content: space-between</p>
+    <p>justify-content: space-evenly</p>
+    <p>justify-content: space-around</p>
+    <h2>align-items</h2>
+    <p>Alinha os itens com o eixo transversal</p>
+    <p>align-items: flex-start</p>
+    <p>align-items: flex-end</p>
+    <p>align-items: center</p>
+</body>
+</html>
