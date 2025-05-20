@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        /*Flexbox irá adaptar os ítens ao tamanho da caixa e da tela*/
+        div.conteiner {
+            background-color: lightcoral;
+            /*Display:flex no elemento pai*/
+            display: flex;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            /*Configurações de itens nos elementos filhos */
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Básico</h1>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <p>Conteiner(pai): display:flex</p>
+    <p>Itens: Configurações de itens</p>
+</body>
+</html>
