@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        div#A{
+            /*
+            flex-shrink: 3;
+            flex-grow: 2;
+            flex-basis: 250px;
+            */
+            flex: 3 2 250px;
+        }
+        div#B{
+            /*
+            flex-shrink: 2;
+            flex-grow: 1;
+            flex-basis: 250px;
+            */
+            flex: 2 1 250px;
+        }
+        div#C{
+            /*
+            flex-shrink: 1;
+            flex-grow: 4;
+            flex-basis: auto;
+            */
+            flex: 1 4 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex (Shorthand)</h1>
+    <p>flex: flex-grow flex-shrink flex-basis</p>
+    <div class="conteiner">
+        <div class="item" id="A">A</div>
+        <div class="item" id="B">B</div>
+        <div class="item" id="C">C</div>
+    </div>
+    <h2>Valores padronizados</h2>
+    <p>flex: initial = flex: 0 1 auto (padrão)</p>
+    <p>flex: none = flex: 0 0 auto (elementos não flexíveis)</p>
+    <p>flex: auto = flex: 1 1 auto (totalmente flexível)</p>
+    <p>flex: 3 = flex: 3 1 auto (altera o flex-grow e mantém os outros padrões)</p>
+</body>
+</html>
