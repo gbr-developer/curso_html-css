@@ -1,0 +1,19 @@
+@media screen and (max-width: 520px) {
+    header {
+        height: 300px;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+
+    ul {
+        height: 250px;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    nav > ul > li > a {
+        display: inline-block;
+        text-align: center;
+        width: 90vw;
+    }
+}
