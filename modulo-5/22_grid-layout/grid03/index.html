@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        div.container {
+            border: 3px solid blue;
+            display: grid;
+            grid-template: repeat(3, 80px) / 1fr 4fr 1fr;
+            place-items: normal normal;
+            place-content: normal normal;
+            gap: 10px;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 120px;
+            grid-auto-flow: row;
+            
+        }
+        div.item {
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Layout</h1>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+    <h2>Grids implícitas</h2>
+    <p>grid-auto-rows - Define automaticamente um tamanho de linha para novos elementos que entrarem no grid implicitamente</p>
+    <p>grid-auto-columns - Define automaticamente um tamanho de colunas para novos elementos que entrarem no grid implicitamente</p>
+    <p>grid-auto-flow - Define se novos elementos adicionados implicitamente no grid entrarão em uma nova linha ou em uma nova coluna</p>
+    <h2>Valores para Grids</h2>
+    <p>Para Grids é mais interessante utilizar valores fracionados, com fr. A soma dos fr irá dividir o container no resultado e distribuir os elementos na proporção definida para preencher o container</p>
+    <p>Também podem ser misturados outros valores na mesma especificação</p>
+</body>
+</html>

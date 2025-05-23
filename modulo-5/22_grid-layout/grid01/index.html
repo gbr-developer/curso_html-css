@@ -8,10 +8,16 @@
         div.container {
             border: 3px solid blue;
             height: 250px;
+            /*Propriedades Básicas*/
             display: grid;
             grid-template-columns: auto auto auto ; /*auto: ajusta os itens para o tamanho do container*/
             grid-template-rows: auto auto auto;
             gap: 5px;
+            /*Propriedades de alinhamento*/
+            align-items: center;
+            justify-items: normal;
+            align-content: space-between;
+            justify-content: space-evenly;
         }
         div.item {
             border: 3px solid red;
@@ -31,10 +37,16 @@
         <div class="item">G</div>
         <div class="item">H</div>
     </div>
-    <h2>Propriedades do Container</h2>
+    <h2>Propriedades básicas do Container</h2>
     <p>Display: grid - Define o tipo do elemento para grid e transforma o elemento em um grid-container</p>
     <p>grid-template-columns - Define as colunas do grid de acordo com a quantidade e os tamanhos que forem digitados</p>
     <p>grid-template-rows - Define as linhas do grid de acordo com a quantidade e os tamanhos que forem digitados</p>
     <p>gap - Define um espaçamento entre os itens</p>
+
+    <h2>Propriedades de alinhamento</h2>
+    <p>align-items: Alinha os items na vertical</p>
+    <p>justify-items: Alinha os items na horizontal</p>
+    <p>align-content: Alinha todo o conjunto de items na vertical</p>
+    <p>justify-content: Alinha todo o conjunto de items na horiznotal</p>
 </body>
 </html>

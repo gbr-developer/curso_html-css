@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        div.container {
+            border: 3px solid blue;
+            height: 250px;
+            display: grid;
+            grid-template: repeat(3, auto) / repeat(3, auto);
+            /* grid-template-columns: auto auto auto ;
+            grid-template-rows: auto auto auto; */
+            place-items: start center;
+            /*align-items: start;
+            justify-items: center; */
+            place-content: space-between end;
+            /*align-content: space-between;
+            justify-content: end;*/
+            gap: 5px;
+
+        }
+        div.item {
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Layout</h1>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+    <h2>Shorthands</h2>
+    <p>grid-template: rows / columns; - Simplifica o grid-template-rows e grid-template-columns</p>
+    <p>place-items: align justify; - Simplifica o align-items e justify-items</p>
+    <p>place-content: align justify; - Simplifica o align-content e justify-content</p>
+    <p>repeat(repetição, valor repetido) - Repete um valor quantas vezes for especificado, diminui a especificação de "auto auto auto", por exemplo</p>
+</body>
+</html>
